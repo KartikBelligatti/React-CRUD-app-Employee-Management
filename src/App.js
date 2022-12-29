@@ -1,24 +1,27 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
-
-function App() {
+import {Routes, Route, Navigate} from 'react-router-dom';
+import NavBar from './components/Navbar/NavBar';
+import AddEmployee from './components/Employees/AddEmployee/AddEmployee';
+import ViewEmployee from './components/Employees/ViewEmployee/ViewEmployee';
+import EditEmployee from './components/Employees/EditEmployee/EditEmployee';
+import EmployeeList from './components/Employees/EmployeeList/EmployeeList';
+import DeleteEmployee from './components/Employees/DeleteEmployee/DeleteEmployee';
+let App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <React.Fragment>
+    <NavBar/>
+    <Routes>
+      <Route path={'/'} element={<Navigate to={'/employees/list'}/>}/>
+      <Route path={'/employees/list'} element={<EmployeeList/>}/>
+      <Route path={'/employees/add'} element={<AddEmployee/>}/>
+      <Route path={'/employees/view/:employeeId'} element={<ViewEmployee/>}/>
+      <Route path={'/employees/edit/:employeeId'} element={<EditEmployee/>}/>
+      <Route path={'/employees/delete/:employeeId'} element={<DeleteEmployee/>}></Route>
+
+    </Routes>
+
+   </React.Fragment>
   );
 }
 

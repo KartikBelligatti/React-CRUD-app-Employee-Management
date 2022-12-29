@@ -1,0 +1,49 @@
+{
+    "employees" : [
+        
+            {
+                "employeeId": 1,
+                "employeeName": "Kartik",
+                "band": "X",
+                "role": "Developer",
+                "designation": "TSE",
+                "responsibilities": "Designing",
+                "imageUrl": "https://assets.stickpng.com/images/585e4bcdcb11b227491c3396.png"
+              },
+              {
+                "employeeId": 2,
+                "employeeName": "Shashi",
+                "band": "Y",
+                "role": "Manager",
+                "designation": "HR",
+                "responsibilities": "Designing",
+                "imageUrl": "https://www.citypng.com/public/uploads/small/11640168385jtmh7kpmvna5ddyynoxsjy5leb1nmpvqooaavkrjmt9zs7vtvuqi4lcwofkzsaejalxn7ggpim4hkg0wbwtzsrp1ldijzbdbsj5z.png"
+              },
+              {
+                "employeeId": 3,
+                "employeeName": "Deepika",
+                "band": "Z",
+                "role": "Tester",
+                "designation": "TSE",
+                "responsibilities": "Testing",
+                "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL9W2SLR1IGrMUdQyQofhcbP-n-ItjasS2h65ketTB_l22aD3o8GUMq92q_g7VaS7m84g&usqp=CAU"
+              },
+              {
+                "employeeId": 4,
+                "employeeName": "Disha",
+                "band": "A",
+                "role": "Head",
+                "designation": "CEO",
+                "responsibilities": "Leading",
+                "imageUrl": "https://www.pngitem.com/pimgs/m/217-2179210_user-female-icon-png-transparent-png.png"
+              }
+        
+    ],
+
+    "groups": [
+        {
+            "id":1,
+            "name":"kartik"
+        }
+    ]
+}
